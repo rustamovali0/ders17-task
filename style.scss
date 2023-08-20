@@ -1,0 +1,252 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+$white: #ffffff;
+$black: #000000;
+$yellow: rgb(234, 206, 81);
+
+@mixin flexStyle($value){
+    display:flex;
+    align-items: center;
+    justify-content: $value;
+}
+
+header {
+    nav {
+        .divIcon {
+            i {
+                font-size: 40px;
+                color: $white;
+            }
+        }
+
+        background-color: $black;
+        height: 6rem;
+
+        .navUl {
+            ul {
+                display: flex;
+
+                li {
+
+                    font-size: 23px;
+
+                    a {
+                        color: $white;
+                        padding-right: 30px;
+                    }
+
+                    &:hover {
+                        border-bottom: 2px solid $white;
+                    }
+                }
+            }
+
+            img {
+                width: 6rem;
+                height: 6rem;
+            }
+
+            display: flex;
+            align-items: center;
+        }
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+main {
+
+    .background {
+        background-image: url(https://www.muycomputer.com/wp-content/uploads/2021/10/Samsung-Galaxy-S22-Exynos-2200-y-Snapdragon-898-e1635150618403.jpg);
+        height: 91vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        .backgroundText {
+            width: 60rem;
+
+            button {
+                margin-top: 20px;
+                width: 10rem;
+                height: 2.5rem;
+                background-color: #00000000;
+                color: #ffffff;
+                font-size: 20px;
+                border: 1px solid white;
+                border-radius: 7px;
+            }
+
+            h1 {
+                font-size: 60px;
+                color: #ffffff;
+
+            }
+
+            p {
+                padding-top: 20px;
+                font-size: 20px;
+                color: #ffffff;
+                line-height: 35px;
+            }
+        }
+
+    }
+
+    .section2 {
+        background-image: url(https://images.unsplash.com/photo-1546484396-fb3fc6f95f98?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+        height: 40vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        div {
+            width: 30rem;
+            height: 12rem;
+            text-align: center;
+            line-height: 35px;
+            color: #ffffff;
+
+            h1 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+        }
+
+        img {
+            width: 5rem;
+            height: 5rem;
+        }
+    }
+}
+
+.secIcon {
+    background-image: url(https://images.unsplash.com/photo-1546484396-fb3fc6f95f98?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+    height: 160px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 70px;
+
+    img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    h2 {
+        color: #ffffff;
+    }
+
+    text-align: center;
+
+}
+
+.section3 {
+    background-image: url(https://images.unsplash.com/photo-1546484396-fb3fc6f95f98?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+    height: 215vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+.imgContainer {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+
+        div {
+            height: 20rem;
+            text-align: center;
+            line-height: 35px;
+            color: #ffffff;
+
+            img {
+                width: 16rem;
+                height: 10rem;
+            }
+
+            button {
+                width: 7rem;
+                height: 2rem;
+                border-radius: 2px;
+                border: 1px solid white;
+                background-color: #00000000;
+                color: #ffffff;
+                font-size: 17px;
+            }
+
+        }
+    }
+// ----------------------------------------------
+.step{
+    padding: 30px;
+    height: 48rem;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  img{
+    width: 60rem;
+}  
+
+
+
+h1{
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+p{
+    font-size: 23px;
+    padding-bottom: 30px;
+
+}
+ul{
+    display: grid;
+    grid-template-columns: 250px 100px;
+    padding-bottom: 30px;
+}
+button{
+    width: 10rem;
+    height: 3rem;
+    background-color: #f1f1f100;
+    color: #ffffff;
+    border: 1px solid white;
+    border-radius: 3px;
+    font-size: 20px;
+}
+.stepText{
+    padding: 40px;
+}
+}
+.miniLogo{
+    height: 100px;
+    @include flexStyle(center);
+    flex-direction: column;
+    color: #ffff;
+    margin-bottom: 40px;
+
+}
+img{
+width: 5rem;
+margin-bottom: 20px;
+
+}
+}
